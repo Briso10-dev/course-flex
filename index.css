@@ -1,0 +1,64 @@
+*{
+    margin : 0;
+    padding: 0;
+    border : 0; 
+}
+html{
+    font-size: 10px
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #d9d9d9;
+    width: 100%;
+    height: 100%;
+} 
+.item{
+    width:10rem;
+    height:10rem;
+    font-size: 40px;
+    text-align: center;
+}
+.i1{
+    border : 1rem #0f0 solid;
+    align-self: flex-start;
+    flex-shrink: 100;
+}
+.i2{
+    border : 1rem #f00 solid;
+    align-self: flex-center;
+    transform: translateX(-13rem);
+}
+.i3{
+    border : 1rem #00f solid;
+    align-self: center;
+}
+.i4{
+    border : 1rem orange solid;
+    align-self: flex-start;
+    transform: translateX(4rem);
+}
+.i5{
+    border : 1rem pink solid;
+    align-self: flex-end;
+}
+/* On pourra positioner chaque element de facon independant e detriment des proprites que le parent donne */
+                     /* Valeur par defaux flex-shrinks est a 1 */
+/* (tres interessant:) Mathematiquement on ne peut pas les avoir tous de 400px et donc ce qui peut contenir il renvoie en bat */;
+/* par defaut c'est a row et c'est tjr au container qu'on le met*/ 
+/* justify-content : COntrol le mouvement sur l'axe des abscisse(main axe) mettre a la position 50*/
+/*justify-content: end;   On bouge tjr sur le main axis au tout fin(a la position 100)*/ 
+/*justify-content: start; On bouge tjr sur le main axis au tout debut(a la position 0) */ 
+/*justify-content: space-between; On bouge tjr sur le main axis au tout debut(a la position 0) */ 
+/*justify-content: space-around; On creer le meme espacement entre les elements(y) mais les espacements entre le premier element et dernier sont differents mais egaux */ 
+/*justify-content: space-evenly; On creer le meme espacement entre les elements et a l'exterieure des elements avec les murs */ 
+
+
+
